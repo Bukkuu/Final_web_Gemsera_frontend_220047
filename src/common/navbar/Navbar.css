@@ -1,0 +1,86 @@
+/* Updated Navbar for Gemsera */
+.navbar {
+  z-index: 1030; /* Keep navbar above the rest */
+  position: relative;
+}
+
+/* Elegant Black Glass Effect */
+.navbar-glass {
+  background: rgba(45, 42, 42, 0.7); /* Dark semi-transparent */
+  backdrop-filter: blur(12px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  border-radius: 50%;
+  height: 60px;
+}
+
+/* Navbar Links */
+.nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.5rem 1.2rem;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  font-size: 1.1rem;
+}
+
+.nav-link:hover {
+  color: #ffcc00; /* Golden hover effect */
+  transform: scale(1.05);
+}
+
+/* Navbar Toggler Icon for Mobile */
+.navbar-toggler-icon {
+  filter: invert(100%);
+}
+
+/* Register and Login Buttons */
+.btn-highlight {
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: 2px solid #ffcc00; /* Gold outline */
+  color: #ffffff;
+  background-color: transparent;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-highlight:hover {
+  background-color: #ffcc00; /* Gold on hover */
+  color: black;
+  box-shadow: 0 4px 15px rgba(255, 204, 0, 0.5);
+}
+
+/* Dropdown Styling */
+.dropdown {
+  z-index: 10000;
+}
+
+.user-dropdown {
+  position: relative;
+  z-index: 1051;
+  background-color: rgba(255, 204, 0, 0.8); /* Golden dropdown */
+  color: #000000;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  z-index: 1050 !important; /* High z-index to prevent overlap */
+  position: absolute !important;
+  background-color: rgba(0, 0, 0, 0.9); /* Ensure visibility */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dropdown-item {
+  color: #ffffff;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #ffcc00; /* Gold hover */
+  color: #000000;
+}

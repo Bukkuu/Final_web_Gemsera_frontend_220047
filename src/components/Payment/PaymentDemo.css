@@ -1,0 +1,32 @@
+.ezy__payment-demo {
+  background: #2c3e50; /* Match ProductCard background */
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.ezy__payment-demo h2 {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ezy__pay-btn {
+  background: linear-gradient(
+    90deg,
+    #0d6efd,
+    #00b4d8
+  ); /* Match ProductCard buttons */
+  border: none;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.ezy__pay-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+  box-shadow: 0 4px 10px rgba(13, 110, 253, 0.4);
+}

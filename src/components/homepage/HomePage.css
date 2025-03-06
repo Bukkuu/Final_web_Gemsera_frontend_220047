@@ -1,0 +1,155 @@
+/* General Page Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #2c3e50; /* Match ProductCard background for consistency */
+  color: #ffffff; /* White text for contrast against dark background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Homepage container */
+.ezy__homepage {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.hero-section p {
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+  animation: fadeInUp 1.2s ease-in-out;
+}
+
+.hero-btn {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  padding: 12px 24px;
+  border-radius: 30px;
+  background: #000; /* Black for contrast */
+  color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid #ffd700; /* Gold border to match ProductCard */
+}
+
+.hero-btn:hover {
+  background: #333;
+  transform: scale(1.05);
+  border-color: #ffd700; /* Maintain gold border on hover */
+}
+
+/* Featured Products Section */
+.ezy__featured-section {
+  padding: 20px 0; /* Reduced padding to remove whitespace */
+  background: rgba(
+    44,
+    62,
+    80,
+    0.95
+  ); /* Slightly translucent dark blue for depth */
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  margin: 0 10px; /* Minimal margin for spacing */
+}
+
+.ezy__section-title {
+  color: #ffffff;
+  font-size: 2rem; /* Slightly smaller for a tighter look */
+  font-weight: bold;
+  margin-bottom: 20px; /* Reduced margin */
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Product Grid */
+.ezy__product-grid {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  max-width: 100%; /* Ensure full width */
+}
+
+/* Remove padding on columns to eliminate whitespace */
+.ezy__product-grid .col {
+  padding: 5px; /* Minimal padding for spacing between cards */
+}
+
+/* Loading State */
+.ezy__loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: rgba(44, 62, 80, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ezy__spinner {
+  width: 3rem;
+  height: 3rem;
+  color: #ffd700; /* Gold spinner to match theme */
+  border-width: 4px;
+  animation: spin 1s linear infinite;
+}
+
+.ezy__loading-text {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-top: 15px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* Error State */
+.ezy__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  background: rgba(44, 62, 80, 0.9);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
