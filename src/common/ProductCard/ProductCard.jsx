@@ -12,7 +12,7 @@ const ProductCard = ({ product }) => {
     ? product.image
     : `http://localhost:5000${product.image}`;
 
-  // Calculate average rating
+  // Calculate average rating.
   const averageRating =
     product.reviews && product.reviews.length > 0
       ? (
