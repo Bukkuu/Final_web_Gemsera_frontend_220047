@@ -9,7 +9,7 @@ import {
 import axios from "axios";
 import { Button, Container, Row, Col, Alert } from "react-bootstrap";
 import "./PaymentDemo.css";
-
+// payment
 const stripePromise = loadStripe(
   "pk_test_51Qy9TFICDuzmFrlVIFbeDOoHj8e6fHSQlnYw3KdeDJPJHaDgRvuM0C5jR9rryMkrUxhatYPhJijRIN59Jb1qFeRn00lLB4mzmW"
 );
